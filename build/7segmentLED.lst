@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
   42 0004 124D     		ldr	r5, .L3
   43 0006 0278     		ldrb	r2, [r0]	@ zero_extendqisi2
   44 0008 0121     		movs	r1, #1
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 2
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 2
 
 
   45 000a 2846     		mov	r0, r5
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
   92              	.L3:
   93 0050 000C0140 		.word	1073810432
   94              		.cfi_endproc
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 3
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 3
 
 
   95              	.LFE65:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  144 0032 FFF7FEFF 		bl	HAL_GPIO_WritePin
  145              	.LVL14:
   29:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG5_GPIO_Port, SEG5_Pin, 1);
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 4
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 4
 
 
  146              		.loc 1 29 5 view .LVU18
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  197 000f 19       		.byte	(.L16-.L12)/2
  198 0010 1D       		.byte	(.L15-.L12)/2
  199 0011 21       		.byte	(.L14-.L12)/2
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 5
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 5
 
 
  200 0012 25       		.byte	(.L13-.L12)/2
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  219              		.loc 1 40 9 is_stmt 0 view .LVU29
  220 001e FFF7FEFF 		bl	displayNumber
  221              	.LVL22:
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 6
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 6
 
 
   41:Core/Src/7segmentLED.c ****     case 2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  263 0042 EAE7     		b	.L9
  264              	.LVL35:
  265              	.L15:
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 7
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 7
 
 
   55:Core/Src/7segmentLED.c ****         break;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  308 0064 00000000 		.word	num0
  309 0068 00000000 		.word	num1
  310 006c 00000000 		.word	num2
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 8
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 8
 
 
  311 0070 00000000 		.word	num3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  372              	num5:
  373 0000 00000000 		.word	0
  374 0004 01000000 		.word	1
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 9
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 9
 
 
  375 0008 00000000 		.word	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  439 0004 00000000 		.word	0
  440 0008 00000000 		.word	0
  441 000c 00000000 		.word	0
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 10
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 10
 
 
  442 0010 00000000 		.word	0
@@ -550,42 +550,42 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
  448              		.file 3 "d:\\armgnu\\12.3 rel1\\arm-none-eabi\\include\\sys\\_stdint.h"
  449              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
  450              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
-ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 11
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccCOekuI.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 7segmentLED.c
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:19     .text.displayNumber:00000000 $t
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:25     .text.displayNumber:00000000 displayNumber
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:93     .text.displayNumber:00000050 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:98     .text.clearDisplay7Seg:00000000 $t
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:104    .text.clearDisplay7Seg:00000000 clearDisplay7Seg
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:163    .text.clearDisplay7Seg:0000004c $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:168    .text.display7Seg:00000000 $t
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:174    .text.display7Seg:00000000 display7Seg
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:192    .text.display7Seg:0000000a $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:202    .text.display7Seg:00000014 $t
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:308    .text.display7Seg:00000064 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:437    .data.num0:00000000 num0
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:424    .data.num1:00000000 num1
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:411    .data.num2:00000000 num2
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:398    .data.num3:00000000 num3
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:385    .data.num4:00000000 num4
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:372    .data.num5:00000000 num5
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:359    .data.num6:00000000 num6
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:346    .data.num7:00000000 num7
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:339    .bss.num8:00000000 num8
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:326    .data.num9:00000000 num9
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:323    .data.num9:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:336    .bss.num8:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:343    .data.num7:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:356    .data.num6:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:369    .data.num5:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:382    .data.num4:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:395    .data.num3:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:408    .data.num2:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:421    .data.num1:00000000 $d
-C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:434    .data.num0:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:19     .text.displayNumber:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:25     .text.displayNumber:00000000 displayNumber
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:93     .text.displayNumber:00000050 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:98     .text.clearDisplay7Seg:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:104    .text.clearDisplay7Seg:00000000 clearDisplay7Seg
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:163    .text.clearDisplay7Seg:0000004c $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:168    .text.display7Seg:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:174    .text.display7Seg:00000000 display7Seg
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:192    .text.display7Seg:0000000a $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:202    .text.display7Seg:00000014 $t
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:308    .text.display7Seg:00000064 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:437    .data.num0:00000000 num0
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:424    .data.num1:00000000 num1
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:411    .data.num2:00000000 num2
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:398    .data.num3:00000000 num3
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:385    .data.num4:00000000 num4
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:372    .data.num5:00000000 num5
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:359    .data.num6:00000000 num6
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:346    .data.num7:00000000 num7
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:339    .bss.num8:00000000 num8
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:326    .data.num9:00000000 num9
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:323    .data.num9:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:336    .bss.num8:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:343    .data.num7:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:356    .data.num6:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:369    .data.num5:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:382    .data.num4:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:395    .data.num3:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:408    .data.num2:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:421    .data.num1:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccCOekuI.s:434    .data.num0:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
