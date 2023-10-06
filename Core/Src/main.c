@@ -122,7 +122,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);
 
   setTimer1(100);
-  setTimer2(50);
+  setTimer2(25);
   clearDisplay7Seg();
   update7SEG(0);
   int index_led = 1;
@@ -148,7 +148,7 @@ int main(void)
     {
       update7SEG(index_led % 4);
       index_led++;
-      setTimer2(50);
+      setTimer2(25);
     }
     /* USER CODE END WHILE */
 

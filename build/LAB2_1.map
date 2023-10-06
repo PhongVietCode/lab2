@@ -1549,20 +1549,20 @@ LOAD d:/armgnu/12.3 rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\lib
 LOAD d:/armgnu/12.3 rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libm.a
 LOAD d:/armgnu/12.3 rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xb25b
- .debug_info    0x00000000     0x1208 build/main.o
- .debug_info    0x00001208       0xf1 build/software_timer.o
- .debug_info    0x000012f9      0x52e build/7segmentLED.o
- .debug_info    0x00001827      0x7b8 build/stm32f1xx_it.o
- .debug_info    0x00001fdf      0x9cc build/stm32f1xx_hal_msp.o
- .debug_info    0x000029ab     0x40a9 build/stm32f1xx_hal_tim.o
- .debug_info    0x00006a54     0x1d2b build/stm32f1xx_hal_tim_ex.o
- .debug_info    0x0000877f      0x862 build/stm32f1xx_hal.o
- .debug_info    0x00008fe1      0xb10 build/stm32f1xx_hal_rcc.o
- .debug_info    0x00009af1      0x6d7 build/stm32f1xx_hal_gpio.o
- .debug_info    0x0000a1c8      0xdf5 build/stm32f1xx_hal_cortex.o
- .debug_info    0x0000afbd      0x26e build/system_stm32f1xx.o
- .debug_info    0x0000b22b       0x30 build/startup_stm32f103x6.o
+.debug_info     0x00000000     0xb259
+ .debug_info    0x00000000     0x1206 build/main.o
+ .debug_info    0x00001206       0xf1 build/software_timer.o
+ .debug_info    0x000012f7      0x52e build/7segmentLED.o
+ .debug_info    0x00001825      0x7b8 build/stm32f1xx_it.o
+ .debug_info    0x00001fdd      0x9cc build/stm32f1xx_hal_msp.o
+ .debug_info    0x000029a9     0x40a9 build/stm32f1xx_hal_tim.o
+ .debug_info    0x00006a52     0x1d2b build/stm32f1xx_hal_tim_ex.o
+ .debug_info    0x0000877d      0x862 build/stm32f1xx_hal.o
+ .debug_info    0x00008fdf      0xb10 build/stm32f1xx_hal_rcc.o
+ .debug_info    0x00009aef      0x6d7 build/stm32f1xx_hal_gpio.o
+ .debug_info    0x0000a1c6      0xdf5 build/stm32f1xx_hal_cortex.o
+ .debug_info    0x0000afbb      0x26e build/system_stm32f1xx.o
+ .debug_info    0x0000b229       0x30 build/startup_stm32f103x6.o
 
 .debug_abbrev   0x00000000     0x1a34
  .debug_abbrev  0x00000000      0x30e build/main.o
