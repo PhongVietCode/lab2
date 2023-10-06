@@ -1,0 +1,591 @@
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"7segmentLED.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/7segmentLED.c"
+  18              		.section	.text.displayNumber,"ax",%progbits
+  19              		.align	1
+  20              		.global	displayNumber
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  25              	displayNumber:
+  26              	.LVL0:
+  27              	.LFB65:
+   1:Core/Src/7segmentLED.c **** #include "7segmentLED.h"
+   2:Core/Src/7segmentLED.c **** int num0[7] = {0, 0, 0, 0, 0, 0, 1};
+   3:Core/Src/7segmentLED.c **** int num1[7] = {1, 0, 0, 1, 1, 1, 1};
+   4:Core/Src/7segmentLED.c **** int num2[7] = {0, 0, 1, 0, 0, 1, 0};
+   5:Core/Src/7segmentLED.c **** int num3[7] = {0, 0, 0, 0, 1, 1, 0};
+   6:Core/Src/7segmentLED.c **** int num4[7] = {1, 0, 0, 1, 1, 0, 0};
+   7:Core/Src/7segmentLED.c **** int num5[7] = {0, 1, 0, 0, 1, 0, 0};
+   8:Core/Src/7segmentLED.c **** int num6[7] = {0, 1, 0, 0, 0, 0, 0};
+   9:Core/Src/7segmentLED.c **** int num7[7] = {0, 0, 0, 1, 1, 1, 1};
+  10:Core/Src/7segmentLED.c **** int num8[7] = {0, 0, 0, 0, 0, 0, 0};
+  11:Core/Src/7segmentLED.c **** int num9[7] = {0, 0, 0, 0, 1, 0, 0};
+  12:Core/Src/7segmentLED.c **** void displayNumber(int numberArr[])
+  13:Core/Src/7segmentLED.c **** {
+  28              		.loc 1 13 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 13 1 is_stmt 0 view .LVU1
+  33 0000 38B5     		push	{r3, r4, r5, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 16
+  36              		.cfi_offset 3, -16
+  37              		.cfi_offset 4, -12
+  38              		.cfi_offset 5, -8
+  39              		.cfi_offset 14, -4
+  40 0002 0446     		mov	r4, r0
+  14:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG0_GPIO_Port, SEG0_Pin, numberArr[0]);
+  41              		.loc 1 14 5 is_stmt 1 view .LVU2
+  42 0004 124D     		ldr	r5, .L3
+  43 0006 0278     		ldrb	r2, [r0]	@ zero_extendqisi2
+  44 0008 0121     		movs	r1, #1
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 2
+
+
+  45 000a 2846     		mov	r0, r5
+  46              	.LVL1:
+  47              		.loc 1 14 5 is_stmt 0 view .LVU3
+  48 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  49              	.LVL2:
+  15:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG1_GPIO_Port, SEG1_Pin, numberArr[1]);
+  50              		.loc 1 15 5 is_stmt 1 view .LVU4
+  51 0010 2279     		ldrb	r2, [r4, #4]	@ zero_extendqisi2
+  52 0012 0221     		movs	r1, #2
+  53 0014 2846     		mov	r0, r5
+  54 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  55              	.LVL3:
+  16:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG2_GPIO_Port, SEG2_Pin, numberArr[2]);
+  56              		.loc 1 16 5 view .LVU5
+  57 001a 227A     		ldrb	r2, [r4, #8]	@ zero_extendqisi2
+  58 001c 0421     		movs	r1, #4
+  59 001e 2846     		mov	r0, r5
+  60 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  61              	.LVL4:
+  17:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG3_GPIO_Port, SEG3_Pin, numberArr[3]);
+  62              		.loc 1 17 5 view .LVU6
+  63 0024 227B     		ldrb	r2, [r4, #12]	@ zero_extendqisi2
+  64 0026 0821     		movs	r1, #8
+  65 0028 2846     		mov	r0, r5
+  66 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  67              	.LVL5:
+  18:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG4_GPIO_Port, SEG4_Pin, numberArr[4]);
+  68              		.loc 1 18 5 view .LVU7
+  69 002e 227C     		ldrb	r2, [r4, #16]	@ zero_extendqisi2
+  70 0030 1021     		movs	r1, #16
+  71 0032 2846     		mov	r0, r5
+  72 0034 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  73              	.LVL6:
+  19:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG5_GPIO_Port, SEG5_Pin, numberArr[5]);
+  74              		.loc 1 19 5 view .LVU8
+  75 0038 227D     		ldrb	r2, [r4, #20]	@ zero_extendqisi2
+  76 003a 2021     		movs	r1, #32
+  77 003c 2846     		mov	r0, r5
+  78 003e FFF7FEFF 		bl	HAL_GPIO_WritePin
+  79              	.LVL7:
+  20:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG6_GPIO_Port, SEG6_Pin, numberArr[6]);
+  80              		.loc 1 20 5 view .LVU9
+  81 0042 227E     		ldrb	r2, [r4, #24]	@ zero_extendqisi2
+  82 0044 4021     		movs	r1, #64
+  83 0046 2846     		mov	r0, r5
+  84 0048 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  85              	.LVL8:
+  21:Core/Src/7segmentLED.c **** }
+  86              		.loc 1 21 1 is_stmt 0 view .LVU10
+  87 004c 38BD     		pop	{r3, r4, r5, pc}
+  88              	.LVL9:
+  89              	.L4:
+  90              		.loc 1 21 1 view .LVU11
+  91 004e 00BF     		.align	2
+  92              	.L3:
+  93 0050 000C0140 		.word	1073810432
+  94              		.cfi_endproc
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 3
+
+
+  95              	.LFE65:
+  97              		.section	.text.clearDisplay7Seg,"ax",%progbits
+  98              		.align	1
+  99              		.global	clearDisplay7Seg
+ 100              		.syntax unified
+ 101              		.thumb
+ 102              		.thumb_func
+ 104              	clearDisplay7Seg:
+ 105              	.LFB66:
+  22:Core/Src/7segmentLED.c **** void clearDisplay7Seg()
+  23:Core/Src/7segmentLED.c **** {
+ 106              		.loc 1 23 1 is_stmt 1 view -0
+ 107              		.cfi_startproc
+ 108              		@ args = 0, pretend = 0, frame = 0
+ 109              		@ frame_needed = 0, uses_anonymous_args = 0
+ 110 0000 10B5     		push	{r4, lr}
+ 111              	.LCFI1:
+ 112              		.cfi_def_cfa_offset 8
+ 113              		.cfi_offset 4, -8
+ 114              		.cfi_offset 14, -4
+  24:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG0_GPIO_Port, SEG0_Pin, 1);
+ 115              		.loc 1 24 5 view .LVU13
+ 116 0002 124C     		ldr	r4, .L7
+ 117 0004 0122     		movs	r2, #1
+ 118 0006 1146     		mov	r1, r2
+ 119 0008 2046     		mov	r0, r4
+ 120 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 121              	.LVL10:
+  25:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG1_GPIO_Port, SEG1_Pin, 1);
+ 122              		.loc 1 25 5 view .LVU14
+ 123 000e 0122     		movs	r2, #1
+ 124 0010 0221     		movs	r1, #2
+ 125 0012 2046     		mov	r0, r4
+ 126 0014 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 127              	.LVL11:
+  26:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG2_GPIO_Port, SEG2_Pin, 1);
+ 128              		.loc 1 26 5 view .LVU15
+ 129 0018 0122     		movs	r2, #1
+ 130 001a 0421     		movs	r1, #4
+ 131 001c 2046     		mov	r0, r4
+ 132 001e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 133              	.LVL12:
+  27:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG3_GPIO_Port, SEG3_Pin, 1);
+ 134              		.loc 1 27 5 view .LVU16
+ 135 0022 0122     		movs	r2, #1
+ 136 0024 0821     		movs	r1, #8
+ 137 0026 2046     		mov	r0, r4
+ 138 0028 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 139              	.LVL13:
+  28:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG4_GPIO_Port, SEG4_Pin, 1);
+ 140              		.loc 1 28 5 view .LVU17
+ 141 002c 0122     		movs	r2, #1
+ 142 002e 1021     		movs	r1, #16
+ 143 0030 2046     		mov	r0, r4
+ 144 0032 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 145              	.LVL14:
+  29:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG5_GPIO_Port, SEG5_Pin, 1);
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 4
+
+
+ 146              		.loc 1 29 5 view .LVU18
+ 147 0036 0122     		movs	r2, #1
+ 148 0038 2021     		movs	r1, #32
+ 149 003a 2046     		mov	r0, r4
+ 150 003c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 151              	.LVL15:
+  30:Core/Src/7segmentLED.c ****     HAL_GPIO_WritePin(SEG6_GPIO_Port, SEG6_Pin, 1);
+ 152              		.loc 1 30 5 view .LVU19
+ 153 0040 0122     		movs	r2, #1
+ 154 0042 4021     		movs	r1, #64
+ 155 0044 2046     		mov	r0, r4
+ 156 0046 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 157              	.LVL16:
+  31:Core/Src/7segmentLED.c **** }
+ 158              		.loc 1 31 1 is_stmt 0 view .LVU20
+ 159 004a 10BD     		pop	{r4, pc}
+ 160              	.L8:
+ 161              		.align	2
+ 162              	.L7:
+ 163 004c 000C0140 		.word	1073810432
+ 164              		.cfi_endproc
+ 165              	.LFE66:
+ 167              		.section	.text.display7Seg,"ax",%progbits
+ 168              		.align	1
+ 169              		.global	display7Seg
+ 170              		.syntax unified
+ 171              		.thumb
+ 172              		.thumb_func
+ 174              	display7Seg:
+ 175              	.LVL17:
+ 176              	.LFB67:
+  32:Core/Src/7segmentLED.c **** void display7Seg(int num)
+  33:Core/Src/7segmentLED.c **** {
+ 177              		.loc 1 33 1 is_stmt 1 view -0
+ 178              		.cfi_startproc
+ 179              		@ args = 0, pretend = 0, frame = 0
+ 180              		@ frame_needed = 0, uses_anonymous_args = 0
+ 181              		.loc 1 33 1 is_stmt 0 view .LVU22
+ 182 0000 08B5     		push	{r3, lr}
+ 183              	.LCFI2:
+ 184              		.cfi_def_cfa_offset 8
+ 185              		.cfi_offset 3, -8
+ 186              		.cfi_offset 14, -4
+  34:Core/Src/7segmentLED.c ****     switch (num)
+ 187              		.loc 1 34 5 is_stmt 1 view .LVU23
+ 188 0002 0928     		cmp	r0, #9
+ 189 0004 09D8     		bhi	.L9
+ 190 0006 DFE800F0 		tbb	[pc, r0]
+ 191              	.L12:
+ 192 000a 05       		.byte	(.L21-.L12)/2
+ 193 000b 09       		.byte	(.L20-.L12)/2
+ 194 000c 0D       		.byte	(.L19-.L12)/2
+ 195 000d 11       		.byte	(.L18-.L12)/2
+ 196 000e 15       		.byte	(.L17-.L12)/2
+ 197 000f 19       		.byte	(.L16-.L12)/2
+ 198 0010 1D       		.byte	(.L15-.L12)/2
+ 199 0011 21       		.byte	(.L14-.L12)/2
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 5
+
+
+ 200 0012 25       		.byte	(.L13-.L12)/2
+ 201 0013 29       		.byte	(.L11-.L12)/2
+ 202              		.p2align 1
+ 203              	.L21:
+  35:Core/Src/7segmentLED.c ****     {
+  36:Core/Src/7segmentLED.c ****     case 0:
+  37:Core/Src/7segmentLED.c ****         displayNumber(num0);
+ 204              		.loc 1 37 9 view .LVU24
+ 205 0014 1348     		ldr	r0, .L24
+ 206              	.LVL18:
+ 207              		.loc 1 37 9 is_stmt 0 view .LVU25
+ 208 0016 FFF7FEFF 		bl	displayNumber
+ 209              	.LVL19:
+  38:Core/Src/7segmentLED.c ****         break;
+ 210              		.loc 1 38 9 is_stmt 1 view .LVU26
+ 211              	.L9:
+  39:Core/Src/7segmentLED.c ****     case 1:
+  40:Core/Src/7segmentLED.c ****         displayNumber(num1);
+  41:Core/Src/7segmentLED.c ****         break;
+  42:Core/Src/7segmentLED.c ****     case 2:
+  43:Core/Src/7segmentLED.c ****         displayNumber(num2);
+  44:Core/Src/7segmentLED.c ****         break;
+  45:Core/Src/7segmentLED.c ****     case 3:
+  46:Core/Src/7segmentLED.c ****         displayNumber(num3);
+  47:Core/Src/7segmentLED.c ****         break;
+  48:Core/Src/7segmentLED.c ****     case 4:
+  49:Core/Src/7segmentLED.c ****         displayNumber(num4);
+  50:Core/Src/7segmentLED.c ****         break;
+  51:Core/Src/7segmentLED.c ****     case 5:
+  52:Core/Src/7segmentLED.c ****         displayNumber(num5);
+  53:Core/Src/7segmentLED.c ****         break;
+  54:Core/Src/7segmentLED.c ****     case 6:
+  55:Core/Src/7segmentLED.c ****         displayNumber(num6);
+  56:Core/Src/7segmentLED.c ****         break;
+  57:Core/Src/7segmentLED.c ****     case 7:
+  58:Core/Src/7segmentLED.c ****         displayNumber(num7);
+  59:Core/Src/7segmentLED.c ****         break;
+  60:Core/Src/7segmentLED.c ****     case 8:
+  61:Core/Src/7segmentLED.c ****         displayNumber(num8);
+  62:Core/Src/7segmentLED.c ****         break;
+  63:Core/Src/7segmentLED.c ****     case 9:
+  64:Core/Src/7segmentLED.c ****         displayNumber(num9);
+  65:Core/Src/7segmentLED.c ****         break;
+  66:Core/Src/7segmentLED.c ****     }
+  67:Core/Src/7segmentLED.c **** }
+ 212              		.loc 1 67 1 is_stmt 0 view .LVU27
+ 213 001a 08BD     		pop	{r3, pc}
+ 214              	.LVL20:
+ 215              	.L20:
+  40:Core/Src/7segmentLED.c ****         break;
+ 216              		.loc 1 40 9 is_stmt 1 view .LVU28
+ 217 001c 1248     		ldr	r0, .L24+4
+ 218              	.LVL21:
+  40:Core/Src/7segmentLED.c ****         break;
+ 219              		.loc 1 40 9 is_stmt 0 view .LVU29
+ 220 001e FFF7FEFF 		bl	displayNumber
+ 221              	.LVL22:
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 6
+
+
+  41:Core/Src/7segmentLED.c ****     case 2:
+ 222              		.loc 1 41 9 is_stmt 1 view .LVU30
+ 223 0022 FAE7     		b	.L9
+ 224              	.LVL23:
+ 225              	.L19:
+  43:Core/Src/7segmentLED.c ****         break;
+ 226              		.loc 1 43 9 view .LVU31
+ 227 0024 1148     		ldr	r0, .L24+8
+ 228              	.LVL24:
+  43:Core/Src/7segmentLED.c ****         break;
+ 229              		.loc 1 43 9 is_stmt 0 view .LVU32
+ 230 0026 FFF7FEFF 		bl	displayNumber
+ 231              	.LVL25:
+  44:Core/Src/7segmentLED.c ****     case 3:
+ 232              		.loc 1 44 9 is_stmt 1 view .LVU33
+ 233 002a F6E7     		b	.L9
+ 234              	.LVL26:
+ 235              	.L18:
+  46:Core/Src/7segmentLED.c ****         break;
+ 236              		.loc 1 46 9 view .LVU34
+ 237 002c 1048     		ldr	r0, .L24+12
+ 238              	.LVL27:
+  46:Core/Src/7segmentLED.c ****         break;
+ 239              		.loc 1 46 9 is_stmt 0 view .LVU35
+ 240 002e FFF7FEFF 		bl	displayNumber
+ 241              	.LVL28:
+  47:Core/Src/7segmentLED.c ****     case 4:
+ 242              		.loc 1 47 9 is_stmt 1 view .LVU36
+ 243 0032 F2E7     		b	.L9
+ 244              	.LVL29:
+ 245              	.L17:
+  49:Core/Src/7segmentLED.c ****         break;
+ 246              		.loc 1 49 9 view .LVU37
+ 247 0034 0F48     		ldr	r0, .L24+16
+ 248              	.LVL30:
+  49:Core/Src/7segmentLED.c ****         break;
+ 249              		.loc 1 49 9 is_stmt 0 view .LVU38
+ 250 0036 FFF7FEFF 		bl	displayNumber
+ 251              	.LVL31:
+  50:Core/Src/7segmentLED.c ****     case 5:
+ 252              		.loc 1 50 9 is_stmt 1 view .LVU39
+ 253 003a EEE7     		b	.L9
+ 254              	.LVL32:
+ 255              	.L16:
+  52:Core/Src/7segmentLED.c ****         break;
+ 256              		.loc 1 52 9 view .LVU40
+ 257 003c 0E48     		ldr	r0, .L24+20
+ 258              	.LVL33:
+  52:Core/Src/7segmentLED.c ****         break;
+ 259              		.loc 1 52 9 is_stmt 0 view .LVU41
+ 260 003e FFF7FEFF 		bl	displayNumber
+ 261              	.LVL34:
+  53:Core/Src/7segmentLED.c ****     case 6:
+ 262              		.loc 1 53 9 is_stmt 1 view .LVU42
+ 263 0042 EAE7     		b	.L9
+ 264              	.LVL35:
+ 265              	.L15:
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 7
+
+
+  55:Core/Src/7segmentLED.c ****         break;
+ 266              		.loc 1 55 9 view .LVU43
+ 267 0044 0D48     		ldr	r0, .L24+24
+ 268              	.LVL36:
+  55:Core/Src/7segmentLED.c ****         break;
+ 269              		.loc 1 55 9 is_stmt 0 view .LVU44
+ 270 0046 FFF7FEFF 		bl	displayNumber
+ 271              	.LVL37:
+  56:Core/Src/7segmentLED.c ****     case 7:
+ 272              		.loc 1 56 9 is_stmt 1 view .LVU45
+ 273 004a E6E7     		b	.L9
+ 274              	.LVL38:
+ 275              	.L14:
+  58:Core/Src/7segmentLED.c ****         break;
+ 276              		.loc 1 58 9 view .LVU46
+ 277 004c 0C48     		ldr	r0, .L24+28
+ 278              	.LVL39:
+  58:Core/Src/7segmentLED.c ****         break;
+ 279              		.loc 1 58 9 is_stmt 0 view .LVU47
+ 280 004e FFF7FEFF 		bl	displayNumber
+ 281              	.LVL40:
+  59:Core/Src/7segmentLED.c ****     case 8:
+ 282              		.loc 1 59 9 is_stmt 1 view .LVU48
+ 283 0052 E2E7     		b	.L9
+ 284              	.LVL41:
+ 285              	.L13:
+  61:Core/Src/7segmentLED.c ****         break;
+ 286              		.loc 1 61 9 view .LVU49
+ 287 0054 0B48     		ldr	r0, .L24+32
+ 288              	.LVL42:
+  61:Core/Src/7segmentLED.c ****         break;
+ 289              		.loc 1 61 9 is_stmt 0 view .LVU50
+ 290 0056 FFF7FEFF 		bl	displayNumber
+ 291              	.LVL43:
+  62:Core/Src/7segmentLED.c ****     case 9:
+ 292              		.loc 1 62 9 is_stmt 1 view .LVU51
+ 293 005a DEE7     		b	.L9
+ 294              	.LVL44:
+ 295              	.L11:
+  64:Core/Src/7segmentLED.c ****         break;
+ 296              		.loc 1 64 9 view .LVU52
+ 297 005c 0A48     		ldr	r0, .L24+36
+ 298              	.LVL45:
+  64:Core/Src/7segmentLED.c ****         break;
+ 299              		.loc 1 64 9 is_stmt 0 view .LVU53
+ 300 005e FFF7FEFF 		bl	displayNumber
+ 301              	.LVL46:
+  65:Core/Src/7segmentLED.c ****     }
+ 302              		.loc 1 65 9 is_stmt 1 view .LVU54
+ 303              		.loc 1 67 1 is_stmt 0 view .LVU55
+ 304 0062 DAE7     		b	.L9
+ 305              	.L25:
+ 306              		.align	2
+ 307              	.L24:
+ 308 0064 00000000 		.word	num0
+ 309 0068 00000000 		.word	num1
+ 310 006c 00000000 		.word	num2
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 8
+
+
+ 311 0070 00000000 		.word	num3
+ 312 0074 00000000 		.word	num4
+ 313 0078 00000000 		.word	num5
+ 314 007c 00000000 		.word	num6
+ 315 0080 00000000 		.word	num7
+ 316 0084 00000000 		.word	num8
+ 317 0088 00000000 		.word	num9
+ 318              		.cfi_endproc
+ 319              	.LFE67:
+ 321              		.global	num9
+ 322              		.section	.data.num9,"aw"
+ 323              		.align	2
+ 326              	num9:
+ 327 0000 00000000 		.word	0
+ 328 0004 00000000 		.word	0
+ 329 0008 00000000 		.word	0
+ 330 000c 00000000 		.word	0
+ 331 0010 01000000 		.word	1
+ 332 0014 00000000 		.word	0
+ 333 0018 00000000 		.word	0
+ 334              		.global	num8
+ 335              		.section	.bss.num8,"aw",%nobits
+ 336              		.align	2
+ 339              	num8:
+ 340 0000 00000000 		.space	28
+ 340      00000000 
+ 340      00000000 
+ 340      00000000 
+ 340      00000000 
+ 341              		.global	num7
+ 342              		.section	.data.num7,"aw"
+ 343              		.align	2
+ 346              	num7:
+ 347 0000 00000000 		.word	0
+ 348 0004 00000000 		.word	0
+ 349 0008 00000000 		.word	0
+ 350 000c 01000000 		.word	1
+ 351 0010 01000000 		.word	1
+ 352 0014 01000000 		.word	1
+ 353 0018 01000000 		.word	1
+ 354              		.global	num6
+ 355              		.section	.data.num6,"aw"
+ 356              		.align	2
+ 359              	num6:
+ 360 0000 00000000 		.word	0
+ 361 0004 01000000 		.word	1
+ 362 0008 00000000 		.word	0
+ 363 000c 00000000 		.word	0
+ 364 0010 00000000 		.word	0
+ 365 0014 00000000 		.word	0
+ 366 0018 00000000 		.word	0
+ 367              		.global	num5
+ 368              		.section	.data.num5,"aw"
+ 369              		.align	2
+ 372              	num5:
+ 373 0000 00000000 		.word	0
+ 374 0004 01000000 		.word	1
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 9
+
+
+ 375 0008 00000000 		.word	0
+ 376 000c 00000000 		.word	0
+ 377 0010 01000000 		.word	1
+ 378 0014 00000000 		.word	0
+ 379 0018 00000000 		.word	0
+ 380              		.global	num4
+ 381              		.section	.data.num4,"aw"
+ 382              		.align	2
+ 385              	num4:
+ 386 0000 01000000 		.word	1
+ 387 0004 00000000 		.word	0
+ 388 0008 00000000 		.word	0
+ 389 000c 01000000 		.word	1
+ 390 0010 01000000 		.word	1
+ 391 0014 00000000 		.word	0
+ 392 0018 00000000 		.word	0
+ 393              		.global	num3
+ 394              		.section	.data.num3,"aw"
+ 395              		.align	2
+ 398              	num3:
+ 399 0000 00000000 		.word	0
+ 400 0004 00000000 		.word	0
+ 401 0008 00000000 		.word	0
+ 402 000c 00000000 		.word	0
+ 403 0010 01000000 		.word	1
+ 404 0014 01000000 		.word	1
+ 405 0018 00000000 		.word	0
+ 406              		.global	num2
+ 407              		.section	.data.num2,"aw"
+ 408              		.align	2
+ 411              	num2:
+ 412 0000 00000000 		.word	0
+ 413 0004 00000000 		.word	0
+ 414 0008 01000000 		.word	1
+ 415 000c 00000000 		.word	0
+ 416 0010 00000000 		.word	0
+ 417 0014 01000000 		.word	1
+ 418 0018 00000000 		.word	0
+ 419              		.global	num1
+ 420              		.section	.data.num1,"aw"
+ 421              		.align	2
+ 424              	num1:
+ 425 0000 01000000 		.word	1
+ 426 0004 00000000 		.word	0
+ 427 0008 00000000 		.word	0
+ 428 000c 01000000 		.word	1
+ 429 0010 01000000 		.word	1
+ 430 0014 01000000 		.word	1
+ 431 0018 01000000 		.word	1
+ 432              		.global	num0
+ 433              		.section	.data.num0,"aw"
+ 434              		.align	2
+ 437              	num0:
+ 438 0000 00000000 		.word	0
+ 439 0004 00000000 		.word	0
+ 440 0008 00000000 		.word	0
+ 441 000c 00000000 		.word	0
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 10
+
+
+ 442 0010 00000000 		.word	0
+ 443 0014 00000000 		.word	0
+ 444 0018 01000000 		.word	1
+ 445              		.text
+ 446              	.Letext0:
+ 447              		.file 2 "d:\\armgnu\\12.3 rel1\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 448              		.file 3 "d:\\armgnu\\12.3 rel1\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 449              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 450              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ARM GAS  C:\Users\phong\AppData\Local\Temp\cccbRlqe.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 7segmentLED.c
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:19     .text.displayNumber:00000000 $t
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:25     .text.displayNumber:00000000 displayNumber
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:93     .text.displayNumber:00000050 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:98     .text.clearDisplay7Seg:00000000 $t
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:104    .text.clearDisplay7Seg:00000000 clearDisplay7Seg
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:163    .text.clearDisplay7Seg:0000004c $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:168    .text.display7Seg:00000000 $t
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:174    .text.display7Seg:00000000 display7Seg
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:192    .text.display7Seg:0000000a $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:202    .text.display7Seg:00000014 $t
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:308    .text.display7Seg:00000064 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:437    .data.num0:00000000 num0
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:424    .data.num1:00000000 num1
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:411    .data.num2:00000000 num2
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:398    .data.num3:00000000 num3
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:385    .data.num4:00000000 num4
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:372    .data.num5:00000000 num5
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:359    .data.num6:00000000 num6
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:346    .data.num7:00000000 num7
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:339    .bss.num8:00000000 num8
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:326    .data.num9:00000000 num9
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:323    .data.num9:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:336    .bss.num8:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:343    .data.num7:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:356    .data.num6:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:369    .data.num5:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:382    .data.num4:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:395    .data.num3:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:408    .data.num2:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:421    .data.num1:00000000 $d
+C:\Users\phong\AppData\Local\Temp\cccbRlqe.s:434    .data.num0:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
