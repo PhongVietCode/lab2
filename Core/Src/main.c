@@ -117,7 +117,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
   setTimer1(100);
-  setTimer2(50);
+  setTimer2(25);
   clearDisplay7Seg();
   display7Seg(1);
   int num = 2;
@@ -146,7 +146,7 @@ int main(void)
       display7Seg(num % 4);
       ledPos++;
       num++;
-      setTimer2(50);
+      setTimer2(25);
     }
     /* USER CODE END WHILE */
 
