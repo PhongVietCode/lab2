@@ -57,30 +57,34 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void switchLED(int n)
+const int MAX_LED = 4;
+int led_buffer[4] = {4, 8, 7, 9};
+void update7SEG(int index)
 {
-  switch (n)
+  switch (index)
   {
-    {
-    case 0:
-      HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 1);
-      HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 0);
-      break;
-    case 1:
-      HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 1);
-      HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, 0);
-      break;
-    case 2:
-      HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, 1);
-      HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, 0);
-      break;
-    case 3:
-      HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, 1);
-      HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
-      break;
-    default:
-      break;
-    }
+  case 0:
+    display7Seg(led_buffer[0]);
+    HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, 1);
+    HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
+    break;
+  case 1:
+    display7Seg(led_buffer[1]);
+    HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 0);
+    HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 1);
+    break;
+  case 2:
+    display7Seg(led_buffer[2]);
+    HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, 0);
+    HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 1);
+    break;
+  case 3:
+    display7Seg(led_buffer[3]);
+    HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, 0);
+    HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, 1);
+    break;
+  default:
+    break;
   }
 }
 /* USER CODE END 0 */
@@ -116,12 +120,12 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
+
   setTimer1(100);
   setTimer2(25);
   clearDisplay7Seg();
-  display7Seg(1);
-  int num = 2;
-  int ledPos = 0;
+  update7SEG(0);
+  int index_led = 1;
   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_GPIO_Port, 0);
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, 0);
   HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
@@ -142,11 +146,9 @@ int main(void)
     }
     if (timer2_flag == 1)
     {
-      switchLED(ledPos % 4);
-      display7Seg(num % 4);
-      ledPos++;
-      num++;
-      setTimer2(25);
+      update7SEG(index_led % 4);
+      index_led++;
+      setTimer2(50);
     }
     /* USER CODE END WHILE */
 
