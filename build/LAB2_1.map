@@ -1549,20 +1549,20 @@ LOAD d:/armgnu/12.3 rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\lib
 LOAD d:/armgnu/12.3 rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libm.a
 LOAD d:/armgnu/12.3 rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xb25b
- .debug_info    0x00000000     0x1208 build/main.o
- .debug_info    0x00001208       0xf1 build/software_timer.o
- .debug_info    0x000012f9      0x52e build/7segmentLED.o
- .debug_info    0x00001827      0x7b8 build/stm32f1xx_it.o
- .debug_info    0x00001fdf      0x9cc build/stm32f1xx_hal_msp.o
- .debug_info    0x000029ab     0x40a9 build/stm32f1xx_hal_tim.o
- .debug_info    0x00006a54     0x1d2b build/stm32f1xx_hal_tim_ex.o
- .debug_info    0x0000877f      0x862 build/stm32f1xx_hal.o
- .debug_info    0x00008fe1      0xb10 build/stm32f1xx_hal_rcc.o
- .debug_info    0x00009af1      0x6d7 build/stm32f1xx_hal_gpio.o
- .debug_info    0x0000a1c8      0xdf5 build/stm32f1xx_hal_cortex.o
- .debug_info    0x0000afbd      0x26e build/system_stm32f1xx.o
- .debug_info    0x0000b22b       0x30 build/startup_stm32f103x6.o
+.debug_info     0x00000000     0xb258
+ .debug_info    0x00000000     0x1205 build/main.o
+ .debug_info    0x00001205       0xf1 build/software_timer.o
+ .debug_info    0x000012f6      0x52e build/7segmentLED.o
+ .debug_info    0x00001824      0x7b8 build/stm32f1xx_it.o
+ .debug_info    0x00001fdc      0x9cc build/stm32f1xx_hal_msp.o
+ .debug_info    0x000029a8     0x40a9 build/stm32f1xx_hal_tim.o
+ .debug_info    0x00006a51     0x1d2b build/stm32f1xx_hal_tim_ex.o
+ .debug_info    0x0000877c      0x862 build/stm32f1xx_hal.o
+ .debug_info    0x00008fde      0xb10 build/stm32f1xx_hal_rcc.o
+ .debug_info    0x00009aee      0x6d7 build/stm32f1xx_hal_gpio.o
+ .debug_info    0x0000a1c5      0xdf5 build/stm32f1xx_hal_cortex.o
+ .debug_info    0x0000afba      0x26e build/system_stm32f1xx.o
+ .debug_info    0x0000b228       0x30 build/startup_stm32f103x6.o
 
 .debug_abbrev   0x00000000     0x1a34
  .debug_abbrev  0x00000000      0x30e build/main.o
@@ -1650,32 +1650,32 @@ LOAD d:/armgnu/12.3 rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\lib
  .debug_line    0x00008c5d      0x1ec build/system_stm32f1xx.o
  .debug_line    0x00008e49       0x74 build/startup_stm32f103x6.o
 
-.debug_str      0x00000000     0x2c51
- .debug_str     0x00000000      0x9d9 build/main.o
-                                0xa98 (size before relaxing)
- .debug_str     0x000009d9       0x41 build/software_timer.o
+.debug_str      0x00000000     0x2c69
+ .debug_str     0x00000000      0x9d7 build/main.o
+                                0xa96 (size before relaxing)
+ .debug_str     0x000009d7       0x5b build/software_timer.o
                                 0x115 (size before relaxing)
- .debug_str     0x00000a1a       0x61 build/7segmentLED.o
+ .debug_str     0x00000a32       0x61 build/7segmentLED.o
                                 0x228 (size before relaxing)
- .debug_str     0x00000a7b       0xd7 build/stm32f1xx_it.o
+ .debug_str     0x00000a93       0xd7 build/stm32f1xx_it.o
                                 0x6d4 (size before relaxing)
- .debug_str     0x00000b52      0x340 build/stm32f1xx_hal_msp.o
+ .debug_str     0x00000b6a      0x340 build/stm32f1xx_hal_msp.o
                                 0x97d (size before relaxing)
- .debug_str     0x00000e92      0xe7d build/stm32f1xx_hal_tim.o
+ .debug_str     0x00000eaa      0xe7d build/stm32f1xx_hal_tim.o
                                0x1636 (size before relaxing)
- .debug_str     0x00001d0f      0x4eb build/stm32f1xx_hal_tim_ex.o
+ .debug_str     0x00001d27      0x4eb build/stm32f1xx_hal_tim_ex.o
                                 0xe52 (size before relaxing)
- .debug_str     0x000021fa      0x309 build/stm32f1xx_hal.o
+ .debug_str     0x00002212      0x309 build/stm32f1xx_hal.o
                                 0x7b5 (size before relaxing)
- .debug_str     0x00002503      0x208 build/stm32f1xx_hal_rcc.o
+ .debug_str     0x0000251b      0x208 build/stm32f1xx_hal_rcc.o
                                 0x5ec (size before relaxing)
- .debug_str     0x0000270b      0x134 build/stm32f1xx_hal_gpio.o
+ .debug_str     0x00002723      0x134 build/stm32f1xx_hal_gpio.o
                                 0x3c1 (size before relaxing)
- .debug_str     0x0000283f      0x391 build/stm32f1xx_hal_cortex.o
+ .debug_str     0x00002857      0x391 build/stm32f1xx_hal_cortex.o
                                 0x85a (size before relaxing)
- .debug_str     0x00002bd0       0x4f build/system_stm32f1xx.o
+ .debug_str     0x00002be8       0x4f build/system_stm32f1xx.o
                                 0x215 (size before relaxing)
- .debug_str     0x00002c1f       0x32 build/startup_stm32f103x6.o
+ .debug_str     0x00002c37       0x32 build/startup_stm32f103x6.o
                                  0x4c (size before relaxing)
 
 .comment        0x00000000       0x45
