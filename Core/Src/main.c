@@ -126,7 +126,7 @@ int main(void)
   clearDisplay7Seg();
   update7SEG(0);
   int index_led = 1;
-  HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_GPIO_Port, 0);
+  HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_Pin, 0);
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, 0);
   HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
   HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 1);

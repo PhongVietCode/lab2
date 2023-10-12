@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
   31:Core/Src/main.c **** /* USER CODE END PTD */
   32:Core/Src/main.c **** 
   33:Core/Src/main.c **** /* Private define ------------------------------------------------------------*/
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 2
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 2
 
 
   34:Core/Src/main.c **** /* USER CODE BEGIN PD */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
   88:Core/Src/main.c ****   }
   89:Core/Src/main.c **** }
   90:Core/Src/main.c **** /* USER CODE END 0 */
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 3
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 3
 
 
   91:Core/Src/main.c **** 
@@ -159,7 +159,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  126:Core/Src/main.c ****   clearDisplay7Seg();
  127:Core/Src/main.c ****   update7SEG(0);
  128:Core/Src/main.c ****   int index_led = 1;
- 129:Core/Src/main.c ****   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_GPIO_Port, 0);
+ 129:Core/Src/main.c ****   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_Pin, 0);
  130:Core/Src/main.c ****   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, 0);
  131:Core/Src/main.c ****   HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
  132:Core/Src/main.c ****   HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 1);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  145:Core/Src/main.c ****       setTimer1(100);
  146:Core/Src/main.c ****     }
  147:Core/Src/main.c ****     if (timer2_flag == 1)
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 4
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 4
 
 
  148:Core/Src/main.c ****     {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  202:Core/Src/main.c **** 
  203:Core/Src/main.c ****   /* USER CODE BEGIN TIM2_Init 0 */
  204:Core/Src/main.c **** 
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 5
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 5
 
 
  205:Core/Src/main.c ****   /* USER CODE END TIM2_Init 0 */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
   39 0004 86B0     		sub	sp, sp, #24
   40              	.LCFI1:
   41              		.cfi_def_cfa_offset 48
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 6
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 6
 
 
  246:Core/Src/main.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
   86              	.LVL0:
  256:Core/Src/main.c **** 
  257:Core/Src/main.c ****   /*Configure GPIO pin Output Level */
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 7
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 7
 
 
  258:Core/Src/main.c ****   HAL_GPIO_WritePin(GPIOB, SEG0_Pin | SEG1_Pin | SEG2_Pin | SEG3_Pin | SEG4_Pin | SEG5_Pin | SEG6_P
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  125              		.loc 1 273 25 is_stmt 0 view .LVU33
  126 0072 0596     		str	r6, [sp, #20]
  274:Core/Src/main.c ****   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 8
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 8
 
 
  127              		.loc 1 274 3 is_stmt 1 view .LVU34
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  176              		.p2align 1
  177              	.L11:
   67:Core/Src/main.c ****     HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, 1);
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 9
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 9
 
 
  178              		.loc 1 67 5 view .LVU39
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  223              	.LVL13:
   75:Core/Src/main.c ****   case 2:
  224              		.loc 1 75 5 view .LVU49
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 10
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 10
 
 
  225 004e EEE7     		b	.L5
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  270 0090 FFF7FEFF 		bl	HAL_GPIO_WritePin
  271              	.LVL23:
   85:Core/Src/main.c ****   default:
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 11
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 11
 
 
  272              		.loc 1 85 5 view .LVU59
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  288:Core/Src/main.c ****  * @brief  This function is executed in case of error occurrence.
  289:Core/Src/main.c ****  * @retval None
  290:Core/Src/main.c ****  */
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 12
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 12
 
 
  291:Core/Src/main.c **** void Error_Handler(void)
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
   40:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ASM
   41:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ASM                                  __asm
   42:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 13
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 13
 
 
   43:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __INLINE
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
   97:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   98:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
   99:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 14
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 14
 
 
  100:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  341              	.LBE6:
  296:Core/Src/main.c ****   while (1)
  342              		.loc 1 296 3 discriminator 1 view .LVU69
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 15
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 15
 
 
  297:Core/Src/main.c ****   {
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  387 001e 4260     		str	r2, [r0, #4]
  215:Core/Src/main.c ****   htim2.Init.Period = 9;
  388              		.loc 1 215 3 is_stmt 1 view .LVU81
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 16
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 16
 
 
  215:Core/Src/main.c ****   htim2.Init.Period = 9;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  424              		.loc 1 229 33 is_stmt 0 view .LVU100
  425 0044 0193     		str	r3, [sp, #4]
  230:Core/Src/main.c ****   {
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 17
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 17
 
 
  426              		.loc 1 230 3 is_stmt 1 view .LVU101
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  475 0000 00B5     		push	{lr}
  476              	.LCFI9:
  477              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 18
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 18
 
 
  478              		.cfi_offset 14, -4
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  517              		.loc 1 183 3 is_stmt 1 view .LVU123
  183:Core/Src/main.c ****   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
  518              		.loc 1 183 31 is_stmt 0 view .LVU124
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 19
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 19
 
 
  519 002e 0F23     		movs	r3, #15
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  559              	.LFE67:
  561              		.section	.text.main,"ax",%progbits
  562              		.align	1
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 20
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 20
 
 
  563              		.global	main
@@ -1197,8 +1197,8 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  607 0028 0020     		movs	r0, #0
  608 002a FFF7FEFF 		bl	update7SEG
  609              	.LVL45:
- 128:Core/Src/main.c ****   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_GPIO_Port, 0);
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 21
+ 128:Core/Src/main.c ****   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_Pin, 0);
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 21
 
 
  610              		.loc 1 128 3 view .LVU149
@@ -1206,48 +1206,48 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  611              		.loc 1 129 3 view .LVU150
  612 002e 214C     		ldr	r4, .L42+4
  613 0030 0022     		movs	r2, #0
- 614 0032 4FF40061 		mov	r1, #2048
- 615 0036 2046     		mov	r0, r4
- 616 0038 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 614 0032 1021     		movs	r1, #16
+ 615 0034 2046     		mov	r0, r4
+ 616 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
  617              	.LVL46:
  130:Core/Src/main.c ****   HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
  618              		.loc 1 130 3 view .LVU151
- 619 003c 0022     		movs	r2, #0
- 620 003e 2021     		movs	r1, #32
- 621 0040 2046     		mov	r0, r4
- 622 0042 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 619 003a 0022     		movs	r2, #0
+ 620 003c 2021     		movs	r1, #32
+ 621 003e 2046     		mov	r0, r4
+ 622 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
  623              	.LVL47:
  131:Core/Src/main.c ****   HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 1);
  624              		.loc 1 131 3 view .LVU152
- 625 0046 0022     		movs	r2, #0
- 626 0048 4021     		movs	r1, #64
- 627 004a 2046     		mov	r0, r4
- 628 004c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 625 0044 0022     		movs	r2, #0
+ 626 0046 4021     		movs	r1, #64
+ 627 0048 2046     		mov	r0, r4
+ 628 004a FFF7FEFF 		bl	HAL_GPIO_WritePin
  629              	.LVL48:
  132:Core/Src/main.c ****   HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, 1);
  630              		.loc 1 132 3 view .LVU153
- 631 0050 0122     		movs	r2, #1
- 632 0052 8021     		movs	r1, #128
- 633 0054 2046     		mov	r0, r4
- 634 0056 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 631 004e 0122     		movs	r2, #1
+ 632 0050 8021     		movs	r1, #128
+ 633 0052 2046     		mov	r0, r4
+ 634 0054 FFF7FEFF 		bl	HAL_GPIO_WritePin
  635              	.LVL49:
  133:Core/Src/main.c ****   HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, 1);
  636              		.loc 1 133 3 view .LVU154
- 637 005a 0122     		movs	r2, #1
- 638 005c 4FF48071 		mov	r1, #256
- 639 0060 2046     		mov	r0, r4
- 640 0062 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 637 0058 0122     		movs	r2, #1
+ 638 005a 4FF48071 		mov	r1, #256
+ 639 005e 2046     		mov	r0, r4
+ 640 0060 FFF7FEFF 		bl	HAL_GPIO_WritePin
  641              	.LVL50:
  134:Core/Src/main.c **** 
  642              		.loc 1 134 3 view .LVU155
- 643 0066 0122     		movs	r2, #1
- 644 0068 4FF40071 		mov	r1, #512
- 645 006c 2046     		mov	r0, r4
- 646 006e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 643 0064 0122     		movs	r2, #1
+ 644 0066 4FF40071 		mov	r1, #512
+ 645 006a 2046     		mov	r0, r4
+ 646 006c FFF7FEFF 		bl	HAL_GPIO_WritePin
  647              	.LVL51:
- 128:Core/Src/main.c ****   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_GPIO_Port, 0);
+ 128:Core/Src/main.c ****   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_Pin, 0);
  648              		.loc 1 128 7 is_stmt 0 view .LVU156
- 649 0072 0124     		movs	r4, #1
+ 649 0070 0124     		movs	r4, #1
  650              	.LVL52:
  651              	.L38:
  140:Core/Src/main.c ****   {
@@ -1256,69 +1256,69 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  653              		.loc 1 142 5 view .LVU158
  142:Core/Src/main.c ****     {
  654              		.loc 1 142 21 is_stmt 0 view .LVU159
- 655 0074 104B     		ldr	r3, .L42+8
- 656 0076 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 22
+ 655 0072 114B     		ldr	r3, .L42+8
+ 656 0074 1B68     		ldr	r3, [r3]
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 22
 
 
  142:Core/Src/main.c ****     {
  657              		.loc 1 142 8 view .LVU160
- 658 0078 012B     		cmp	r3, #1
- 659 007a 11D0     		beq	.L41
+ 658 0076 012B     		cmp	r3, #1
+ 659 0078 11D0     		beq	.L41
  660              	.L37:
  147:Core/Src/main.c ****     {
  661              		.loc 1 147 5 is_stmt 1 view .LVU161
  147:Core/Src/main.c ****     {
  662              		.loc 1 147 21 is_stmt 0 view .LVU162
- 663 007c 0F4B     		ldr	r3, .L42+12
- 664 007e 1B68     		ldr	r3, [r3]
+ 663 007a 104B     		ldr	r3, .L42+12
+ 664 007c 1B68     		ldr	r3, [r3]
  147:Core/Src/main.c ****     {
  665              		.loc 1 147 8 view .LVU163
- 666 0080 012B     		cmp	r3, #1
- 667 0082 F7D1     		bne	.L38
+ 666 007e 012B     		cmp	r3, #1
+ 667 0080 F7D1     		bne	.L38
  149:Core/Src/main.c ****       index_led++;
  668              		.loc 1 149 7 is_stmt 1 view .LVU164
- 669 0084 6342     		rsbs	r3, r4, #0
- 670 0086 04F00300 		and	r0, r4, #3
- 671 008a 03F00303 		and	r3, r3, #3
- 672 008e 58BF     		it	pl
- 673 0090 5842     		rsbpl	r0, r3, #0
- 674 0092 FFF7FEFF 		bl	update7SEG
+ 669 0082 6342     		rsbs	r3, r4, #0
+ 670 0084 04F00300 		and	r0, r4, #3
+ 671 0088 03F00303 		and	r3, r3, #3
+ 672 008c 58BF     		it	pl
+ 673 008e 5842     		rsbpl	r0, r3, #0
+ 674 0090 FFF7FEFF 		bl	update7SEG
  675              	.LVL53:
  150:Core/Src/main.c ****       setTimer2(25);
  676              		.loc 1 150 7 view .LVU165
  150:Core/Src/main.c ****       setTimer2(25);
  677              		.loc 1 150 16 is_stmt 0 view .LVU166
- 678 0096 0134     		adds	r4, r4, #1
+ 678 0094 0134     		adds	r4, r4, #1
  679              	.LVL54:
  151:Core/Src/main.c ****     }
  680              		.loc 1 151 7 is_stmt 1 view .LVU167
- 681 0098 1920     		movs	r0, #25
- 682 009a FFF7FEFF 		bl	setTimer2
+ 681 0096 1920     		movs	r0, #25
+ 682 0098 FFF7FEFF 		bl	setTimer2
  683              	.LVL55:
- 684 009e E9E7     		b	.L38
+ 684 009c E9E7     		b	.L38
  685              	.L41:
  144:Core/Src/main.c ****       setTimer1(100);
  686              		.loc 1 144 7 view .LVU168
- 687 00a0 1021     		movs	r1, #16
- 688 00a2 0448     		ldr	r0, .L42+4
- 689 00a4 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 687 009e 1021     		movs	r1, #16
+ 688 00a0 0448     		ldr	r0, .L42+4
+ 689 00a2 FFF7FEFF 		bl	HAL_GPIO_TogglePin
  690              	.LVL56:
  145:Core/Src/main.c ****     }
  691              		.loc 1 145 7 view .LVU169
- 692 00a8 6420     		movs	r0, #100
- 693 00aa FFF7FEFF 		bl	setTimer1
+ 692 00a6 6420     		movs	r0, #100
+ 693 00a8 FFF7FEFF 		bl	setTimer1
  694              	.LVL57:
- 695 00ae E5E7     		b	.L37
+ 695 00ac E5E7     		b	.L37
  696              	.L43:
- 697              		.align	2
+ 697 00ae 00BF     		.align	2
  698              	.L42:
  699 00b0 00000000 		.word	htim2
  700 00b4 00080140 		.word	1073809408
  701 00b8 00000000 		.word	timer1_flag
  702 00bc 00000000 		.word	timer2_flag
  703              		.cfi_endproc
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 23
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 23
 
 
  704              	.LFE66:
@@ -1360,37 +1360,37 @@ ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 1
  743              		.file 14 "Core/Inc/7segmentLED.h"
  744              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
  745              		.file 16 "<built-in>"
-ARM GAS  C:\Users\phong\AppData\Local\Temp\ccQLjngn.s 			page 24
+ARM GAS  C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:19     .text.MX_GPIO_Init:00000000 $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:141    .text.MX_GPIO_Init:00000084 $d
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:148    .text.update7SEG:00000000 $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:154    .text.update7SEG:00000000 update7SEG
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:172    .text.update7SEG:0000000a $d
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:176    .text.update7SEG:0000000e $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:278    .text.update7SEG:00000098 $d
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:711    .data.led_buffer:00000000 led_buffer
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:284    .text.HAL_TIM_PeriodElapsedCallback:00000000 $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:290    .text.HAL_TIM_PeriodElapsedCallback:00000000 HAL_TIM_PeriodElapsedCallback
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:312    .text.Error_Handler:00000000 $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:318    .text.Error_Handler:00000000 Error_Handler
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:350    .text.MX_TIM2_Init:00000000 $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:355    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:458    .text.MX_TIM2_Init:00000064 $d
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:728    .bss.htim2:00000000 htim2
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:463    .text.SystemClock_Config:00000000 $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:469    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:562    .text.main:00000000 $t
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:568    .text.main:00000000 main
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:699    .text.main:000000b0 $d
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:708    .data.led_buffer:00000000 $d
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:721    .rodata.MAX_LED:00000000 MAX_LED
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:718    .rodata.MAX_LED:00000000 $d
-C:\Users\phong\AppData\Local\Temp\ccQLjngn.s:725    .bss.htim2:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:19     .text.MX_GPIO_Init:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:141    .text.MX_GPIO_Init:00000084 $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:148    .text.update7SEG:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:154    .text.update7SEG:00000000 update7SEG
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:172    .text.update7SEG:0000000a $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:176    .text.update7SEG:0000000e $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:278    .text.update7SEG:00000098 $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:711    .data.led_buffer:00000000 led_buffer
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:284    .text.HAL_TIM_PeriodElapsedCallback:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:290    .text.HAL_TIM_PeriodElapsedCallback:00000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:312    .text.Error_Handler:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:318    .text.Error_Handler:00000000 Error_Handler
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:350    .text.MX_TIM2_Init:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:355    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:458    .text.MX_TIM2_Init:00000064 $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:728    .bss.htim2:00000000 htim2
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:463    .text.SystemClock_Config:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:469    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:562    .text.main:00000000 $t
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:568    .text.main:00000000 main
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:699    .text.main:000000b0 $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:708    .data.led_buffer:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:721    .rodata.MAX_LED:00000000 MAX_LED
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:718    .rodata.MAX_LED:00000000 $d
+C:\Users\phong\AppData\Local\Temp\ccKbIOzB.s:725    .bss.htim2:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
