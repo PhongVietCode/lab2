@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/stm32MX/project/LAB2_1/Core/Src",
-      "program": "d:/stm32MX/project/LAB2_1/Core/Src/build/Debug/outDebug",
+      "cwd": "d:/stm32MX/project/LAB2/Core/Src",
+      "program": "d:/stm32MX/project/LAB2/Core/Src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
