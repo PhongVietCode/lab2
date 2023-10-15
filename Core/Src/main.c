@@ -67,10 +67,19 @@ int led_buffer[4] = {1, 8, 0, 9};
 // quet cot hang
 uint16_t cot[8] = {ENM0_Pin, ENM1_Pin, ENM2_Pin, ENM3_Pin, ENM4_Pin, ENM5_Pin, ENM6_Pin, ENM7_Pin};
 uint16_t hang[8] = {ROW0_Pin, ROW1_Pin, ROW2_Pin, ROW3_Pin, ROW4_Pin, ROW5_Pin, ROW6_Pin, ROW7_Pin};
-// ma chu A
-uint16_t matrix_buffer[1][8] = {{~0x18, ~0x3c, ~0x66, ~0x66, ~0x7e, ~0x7e, ~0x66, ~0x66}};
-uint16_t bytes[1][8] = {{0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80}};
+// ma gui ra cot
+uint16_t matrix_buffer[8] = {0xc3, 0x81, 0x99, 0x99, 0x81, 0x99, 0x99, 0x99};
 // ma quet hang
+uint16_t bytes[8] = {
+    0x01,
+    0x02,
+    0x04,
+    0x08,
+    0x10,
+    0x20,
+    0x40,
+    0x80,
+};
 int hour = 18;
 int minute = 9;
 int second = 50;
@@ -113,51 +122,58 @@ void updateClockBuffer()
 
 void writeByte(GPIO_TypeDef *port, uint16_t *pins, uint16_t byte)
 {
-  HAL_GPIO_WritePin(port, pins[0], byte & (uint8_t)0x01);
-  HAL_GPIO_WritePin(port, pins[1], byte & (uint8_t)0x02);
-  HAL_GPIO_WritePin(port, pins[2], byte & (uint8_t)0x04);
-  HAL_GPIO_WritePin(port, pins[3], byte & (uint8_t)0x08);
-  HAL_GPIO_WritePin(port, pins[4], byte & (uint8_t)0x10);
-  HAL_GPIO_WritePin(port, pins[5], byte & (uint8_t)0x20);
-  HAL_GPIO_WritePin(port, pins[6], byte & (uint8_t)0x40);
-  HAL_GPIO_WritePin(port, pins[7], byte & (uint8_t)0x80);
+  HAL_GPIO_WritePin(port, pins[0], byte & (uint16_t)0x01);
+  HAL_GPIO_WritePin(port, pins[1], byte & (uint16_t)0x02);
+  HAL_GPIO_WritePin(port, pins[2], byte & (uint16_t)0x04);
+  HAL_GPIO_WritePin(port, pins[3], byte & (uint16_t)0x08);
+  HAL_GPIO_WritePin(port, pins[4], byte & (uint16_t)0x10);
+  HAL_GPIO_WritePin(port, pins[5], byte & (uint16_t)0x20);
+  HAL_GPIO_WritePin(port, pins[6], byte & (uint16_t)0x40);
+  HAL_GPIO_WritePin(port, pins[7], byte & (uint16_t)0x80);
 }
 
 void updateLedMatrix(int index)
 {
+  uint16_t temp = matrix_buffer[index];
   switch (index)
   {
   case 0:
-    writeByte(GPIOA, cot, ~0x01);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x01);
     break;
   case 1:
-    writeByte(GPIOA, cot, ~0x02);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x02);
+
     break;
   case 2:
-    writeByte(GPIOA, cot, ~0x04);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x04);
+
     break;
   case 3:
-    writeByte(GPIOA, cot, ~0x08);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x08);
+
     break;
   case 4:
-    writeByte(GPIOA, cot, ~0x10);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x10);
+
     break;
   case 5:
-    writeByte(GPIOA, cot, ~0x20);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x20);
+
     break;
   case 6:
-    writeByte(GPIOA, cot, ~0x40);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x40);
+
     break;
   case 7:
-    writeByte(GPIOA, cot, ~0x80);
-    writeByte(GPIOB, hang, matrix_buffer[index]);
+    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOB, hang, ~0x80);
     break;
   default:
     break;
@@ -197,12 +213,10 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
   setTimer1(100);
-  // setTimer2(100);
-  // setTimer3(100); // fai lam tan so  >= 25hz
-
-  update7SEG(0);
-  updateClockBuffer();
+  setTimer2(25);
+  setTimer3(10); // fai lam tan so  >= 25hz
   clearDisplay7Seg();
+
   int ledPos = 1;
   HAL_GPIO_WritePin(DOT_GPIO_Port, DOT_Pin, 1);
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, 0);
@@ -214,15 +228,15 @@ int main(void)
 
   HAL_GPIO_WritePin(GPIOB, ROW0_Pin | ROW1_Pin | ROW2_Pin | ROW3_Pin | ROW4_Pin | ROW5_Pin | ROW6_Pin | ROW7_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(GPIOA, ENM0_Pin | ENM1_Pin | ENM2_Pin | ENM3_Pin | ENM4_Pin | ENM5_Pin | ENM6_Pin | ENM7_Pin, GPIO_PIN_RESET);
-
-  updateLedMatrix(7);
+  updateLedMatrix(0);
+  update7SEG(0);
+  updateClockBuffer();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
     if (timer1_flag == 1)
     {
       second++;
