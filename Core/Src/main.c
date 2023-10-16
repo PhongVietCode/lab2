@@ -68,7 +68,7 @@ int led_buffer[4] = {1, 8, 0, 9};
 uint16_t cot[8] = {ENM0_Pin, ENM1_Pin, ENM2_Pin, ENM3_Pin, ENM4_Pin, ENM5_Pin, ENM6_Pin, ENM7_Pin};
 uint16_t hang[8] = {ROW0_Pin, ROW1_Pin, ROW2_Pin, ROW3_Pin, ROW4_Pin, ROW5_Pin, ROW6_Pin, ROW7_Pin};
 // ma gui ra cot
-uint16_t matrix_buffer[8] = {0xc3, 0x81, 0x99, 0x99, 0x81, 0x99, 0x99, 0x99};
+uint16_t matrix_buffer[8] = {0x18, 0x3c, 0x66, 0x66, 0x7e, 0x7e, 0x66, 0x66};
 // ma quet hang
 uint16_t bytes[8] = {
     0x01,
@@ -138,41 +138,41 @@ void updateLedMatrix(int index)
   switch (index)
   {
   case 0:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x01);
     break;
   case 1:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x02);
 
     break;
   case 2:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x04);
 
     break;
   case 3:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x08);
 
     break;
   case 4:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x10);
 
     break;
   case 5:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x20);
 
     break;
   case 6:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x40);
 
     break;
   case 7:
-    writeByte(GPIOA, cot, (temp));
+    writeByte(GPIOA, cot, ~(temp));
     writeByte(GPIOB, hang, ~0x80);
     break;
   default:
