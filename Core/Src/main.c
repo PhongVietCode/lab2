@@ -97,17 +97,21 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   setTimer1(50);
   clearDisplay7Seg();
-  int num = 0;
+  int num = 1;
+  int index = 1;
   HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
   HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 1);
+  display7Seg(1);
+  num += index;
   while (1)
   {
     if (timer1_flag == 1)
     {
-      display7Seg(num % 9);
-      num++;
       HAL_GPIO_TogglePin(EN0_GPIO_Port, EN0_Pin);
       HAL_GPIO_TogglePin(EN1_GPIO_Port, EN1_Pin);
+      display7Seg(num);
+      index *= -1;
+      num += index;
       setTimer1(50);
     }
     /* USER CODE END WHILE */
