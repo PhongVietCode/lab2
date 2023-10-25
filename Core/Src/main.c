@@ -166,6 +166,7 @@ int main(void)
       {
         hour = 0;
       }
+      HAL_GPIO_Toggle(DOT_GPIO_Port, DOT_Pin);
       updateClockBuffer();
       setTimer1(100);
     }
